@@ -1,4 +1,6 @@
-# simple-webpage
+# vaccine-responder
+
+### Check locations to receive the 😷 COVID Vaccine 💉 in your area📍
 
 ## Project setup
 ```
