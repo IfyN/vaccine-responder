@@ -8,7 +8,11 @@
 <!--Form section-->
        <form class="flex flex-row" action="/near-me" method="GET">
           <div class="relative input-location">
-         <input type="text" id="vaclocation" name="city" class="rounded-full search-input border border-gray-300 hover:border-gray-400 focus:outline-none focus:border-gray-700f px-4 py-2 md:w-64" autocomplete="off" placeholder="Enter location...">
+         <input type="text" id="vaclocation" name="city" 
+         class="rounded-full search-input border border-gray-300 hover:border-gray-400 focus:outline-none focus:border-gray-700f px-4 py-2 md:w-64" autocomplete="off" 
+         placeholder="Enter location..." 
+         @keyup.enter="searchLocation"
+         v-model="place" ref="input">
          
          <button class="rounded-full bg-blue-500 text-white hover:bg-blue-700 px-10 md:px-5 ms-2" id= "submit-city">Find Vaccine</button>  
            </div>
@@ -29,6 +33,20 @@ Everyone over 16 is now eligible for free, safe, and reliable COVID-19 vaccines 
  </div>
  </div>
 </template>
+
+<script>
+export default {
+    data(){
+        return{
+            place: '',
+            hospitals:[],
+        }
+    },
+    methods:{
+        searchLocation()
+    }
+}
+</script>
 
 <style scoped>
 
