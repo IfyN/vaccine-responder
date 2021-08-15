@@ -149,6 +149,19 @@ export const Locations = [
         ward:'Apapa',
         facility: 'CFO MRS Military Hospital',
     },
+    {   
+        id: 25,
+        lga: 'Badagry',
+        ward:'Apa',
+        facility: 'Apa PHC',
+
+    },
+    {
+        id: 26,
+        lga: 'Badagry',
+        ward:'Iworo-Gbanko',
+        facility: 'Ilado PHC',
+    }
     
 
 
